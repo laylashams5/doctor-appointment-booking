@@ -1,0 +1,39 @@
+.content {
+    // margin-left: 18rem;
+    background-color: #f3f3f3;
+    .container-fluid {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.header {
+    width: calc(100% - 50px);
+    margin-right: 50px;
+}
+
+.welcome {
+    span {
+        color: #2c6698;
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 500;   
+    }
+
+    h6 {
+        color: #4d4f5c;
+        font-size: 25px;
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+}
+
+.container-fluid {
+    overflow-y: auto;
+}
+
+@media (max-width: 1440px) {
+    .content {
+        margin-left: 0 !important;
+    }
+}

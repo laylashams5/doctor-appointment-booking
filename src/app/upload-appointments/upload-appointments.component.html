@@ -1,0 +1,53 @@
+<!-- Page Header -->
+<div class="page-header">
+    <div class="row">
+        <div class="col-sm-12">
+            <h3 class="page-title">Appointments</h3>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="dashboard/home">Dashboard</a></li>
+                <li class="breadcrumb-item active">Appointments</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- /Page Header -->
+
+
+<p-table responsiveLayout="scroll" #dt  [loading]="loading" [showCurrentPageReport]="true"
+[value]="appointments"  [paginator]="true" [rows]="3" [rowsPerPageOptions]="[3,10,25,50]" >
+    <ng-template pTemplate="header">
+        <tr>
+            <th pSortableColumn="doctorName"> <p-sortIcon field="doctorName"></p-sortIcon>Doctor Name</th>
+            <th pSortableColumn="speciality"><p-sortIcon field="speciality"></p-sortIcon>Speciality</th>
+            <th pSortableColumn="patientName"><p-sortIcon field="patientName"></p-sortIcon>Patient Name</th>
+            <th pSortableColumn="appiontmentDate"><p-sortIcon field="appiontmentDate"></p-sortIcon>Apointment Time</th>
+            <th pSortableColumn="status"><p-sortIcon field="status"></p-sortIcon>Status</th>
+            <th pSortableColumn="amount"><p-sortIcon field="amount"></p-sortIcon>Amount</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-appointment>
+        <tr>
+            <td>
+                <img [alt]="appointment.doctorName" src="{{appointment.doctorImg}}" width="32" style="vertical-align: middle; border-radius: 58px;" />
+                <span class="image-text">{{appointment.doctorName}}</span>
+            </td>
+            <td>
+                {{appointment.speciality}}
+            </td>
+            <td>
+                <img [alt]="appointment.patientName" src="{{appointment.patientImg}}" width="32" style="vertical-align: middle; border-radius: 58px;" />
+                <span class="image-text">{{appointment.patientName}}</span>
+            </td>
+            <td>
+                {{appointment.appiontmentDate}}
+                {{appointment.appointmentTime}}
+            </td>
+            <td>
+                {{appointment.status}}
+            </td>
+            <td>
+                {{appointment.amount}}
+            </td>
+        </tr>
+    </ng-template>
+</p-table>

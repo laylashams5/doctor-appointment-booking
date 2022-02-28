@@ -1,0 +1,57 @@
+<!-- Page Header -->
+<div class="page-header">
+    <div class="row">
+        <div class="col-sm-12">
+            <h3 class="page-title">Patients</h3>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="dashboard/home">Dashboard</a></li>
+                <li class="breadcrumb-item active">Patients</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- /Page Header -->
+
+
+<p-table responsiveLayout="scroll" #dt  [loading]="loading" [showCurrentPageReport]="true"
+[value]="patients"  [paginator]="true" [rows]="3" [rowsPerPageOptions]="[3,10,25,50]" >
+    <ng-template pTemplate="header">
+        <tr>
+            <th pSortableColumn="patientId"> <p-sortIcon field="patientId"></p-sortIcon>Patient ID</th>
+            <th pSortableColumn="patientName"><p-sortIcon field="patientName"></p-sortIcon>Patient Name</th>
+            <th pSortableColumn="Age"><p-sortIcon field="Age"></p-sortIcon>Age</th>
+            <th pSortableColumn="gender"><p-sortIcon field="gender"></p-sortIcon>Gender</th>
+            <th pSortableColumn="address"><p-sortIcon field="address"></p-sortIcon>Address</th>
+            <th pSortableColumn="phone"><p-sortIcon field="phone"></p-sortIcon>Phone</th>
+            <th pSortableColumn="last_visit"><p-sortIcon field="last_visit"></p-sortIcon>Last Visit</th>
+            <th pSortableColumn="paid"><p-sortIcon field="paid"></p-sortIcon>Paid</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-patient>
+        <tr>
+            <td>{{patient.patientId}}</td>
+            <td>
+                <img [alt]="patient.patientName" src="{{patient.patientImg}}" width="32" style="vertical-align: middle; border-radius: 58px;" />
+                <span class="image-text">{{patient.patientName}}</span>
+            </td>
+            <td>
+                {{patient.Age}}
+            </td>
+            <td>
+                {{patient.gender}}
+            </td>
+            <td>
+                {{patient.address}}
+            </td>
+            <td>
+                {{patient.phone}}
+            </td>
+            <td>
+                {{patient.last_visit}}
+            </td>
+            <td>
+                {{patient.paid}}
+            </td>
+        </tr>
+    </ng-template>
+</p-table>

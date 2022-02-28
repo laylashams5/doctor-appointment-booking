@@ -1,0 +1,27 @@
+<app-sidebar></app-sidebar>
+<div class="content h-100" [ngStyle]="{'margin-left': mgl}">
+    <div class="container-fluid h-100">
+        <i class="pi pi-bars px-3" style="color: #AFAFAF; cursor: pointer;" *ngIf="isOpen" (click)="open()"></i>
+        <div class="row align-items-center py-3 px-3">
+            <div class="col-8" *ngIf="showHeader">
+                <div class="row align-items-center">
+                    <div class="col-6 d-none d-md-block">
+                        <div class="welcome">
+                            <span>welcome</span>
+                            <h6 class="mb-0">Doctor</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end align-items-center col-12 col-md-6">
+                        <app-search class="mg-r-2 mr-md-5"></app-search>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end col-4" [ngClass]="{'offset-8': !showHeader}">
+                <app-user name="Doctor" role="admin"></app-user>
+            </div>
+        </div>
+        <div class="px-3">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

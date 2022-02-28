@@ -1,0 +1,38 @@
+<!-- Page Header -->
+<div class="page-header">
+    <div class="row">
+        <div class="col-sm-12">
+            <h3 class="page-title">Doctors</h3>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="dashboard/home">Dashboard</a></li>
+                <li class="breadcrumb-item active">Doctors</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- /Page Header -->
+
+<p-table responsiveLayout="scroll" #dt  [loading]="loading" [showCurrentPageReport]="true"
+[value]="doctors"  [paginator]="true" [rows]="3" [rowsPerPageOptions]="[3,10,25,50]" >
+    <ng-template pTemplate="header">
+        <tr>
+            <th pSortableColumn="doctorName"> <p-sortIcon field="doctorName"></p-sortIcon>Doctor Name</th>
+            <th pSortableColumn="speciality"><p-sortIcon field="speciality"></p-sortIcon>Speciality</th>
+            <th pSortableColumn="earned"><p-sortIcon field="earned"></p-sortIcon>Earned</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-doctor>
+        <tr>
+            <td>
+                <img [alt]="doctor.doctorName" src="{{doctor.doctorImg}}" width="32" style="vertical-align: middle; border-radius: 58px;" />
+                <span class="image-text">{{doctor.doctorName}}</span>
+            </td>
+            <td>
+                {{doctor.speciality}}
+            </td>
+            <td>
+                {{doctor.earned}}
+            </td>
+        </tr>
+    </ng-template>
+</p-table>

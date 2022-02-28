@@ -1,0 +1,154 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
+html,
+body {
+    height: 100%;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+body {
+    margin: 0;
+}
+
+//sidebar
+.p-sidebar {
+    padding: 20px 25px;
+    box-shadow: 0 11px 15px -7px rgb(0 0 0 / 20%), 0px 24px 38px 3px rgb(0 0 0 / 5%), 0px 9px 46px 8px rgb(0 0 0 / 0%);
+}
+
+.p-sidebar-content {
+    padding: 0 !important;
+}
+
+.p-sidebar-header {
+    display: none !important;
+}
+
+//menu
+.p-menu .p-submenu-header {
+    display: none !important;
+}
+
+.p-menu {
+    margin: 8px 0;
+    box-shadow: 0 0.5rem 1rem #00000026;
+}
+
+///panelmenu
+.p-panelmenu {
+    padding: 60px 0;
+}
+
+.p-panelmenu .p-panelmenu-header > a {
+    padding-left: 0;
+    padding-right: 0;
+    background: transparent;
+    border: none;
+}
+
+.p-panelmenu .p-panelmenu-header:not(.p-highlight):not(.p-disabled) > a:hover,
+.p-panelmenu .p-panelmenu-header.p-highlight:not(.p-disabled) > a:hover,
+.p-panelmenu .p-panelmenu-header.p-highlight > a {
+    background: transparent !important;
+    border: none !important;
+}
+
+.p-panelmenu .p-panelmenu-header > a:focus,
+.p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link:focus {
+    box-shadow: none;
+}
+
+.p-panelmenu .p-panelmenu-content {
+    border: none;
+}
+
+.p-panelmenu .p-panelmenu-panel {
+    margin-bottom: 15px;
+}
+
+.p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link:not(.p-disabled):hover {
+    background: transparent;
+}
+
+.p-panelmenu .p-panelmenu-header > a .p-panelmenu-icon {
+    display: none;
+}
+
+.p-panelmenu .p-panelmenu-header > a .p-menuitem-icon {
+    margin-right: 1rem;
+}
+
+.p-panelmenu .p-menuitem-text {
+    line-height: 1;
+    font-weight: 400;
+    color: #919191;
+}
+
+.p-panelmenu .p-panelmenu-header > a .p-menuitem-icon {
+    margin-right: 1rem;
+    color: #919191;
+    font-weight: 500;
+}
+
+.p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link .p-menuitem-text {
+    color: #919191;
+}
+
+.p-menuitem-link-active > .p-menuitem-text,
+.p-menuitem-link-active > .p-menuitem-icon {
+    color: #0ed6f3 !important;
+    font-weight: 500;
+}
+
+//autocomplete
+.p-autocomplete-input {
+    min-height: 40px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border: 0;
+    background-color: #e2e2e2;
+}
+
+.p-autocomplete-input::placeholder {
+    color: #919191;
+    font-weight: 500;
+}
+
+.p-inputtext:enabled:focus {
+    box-shadow: none;
+}
+
+.p-sidebar-left {
+    background: #333;
+}
+.page-header {
+	margin-bottom: 1.875rem;
+}
+.page-header .breadcrumb {
+    background-color: transparent;
+    color: #6c757d;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding: 0;
+}
+.page-header .breadcrumb a {
+	color: #333;
+    text-decoration: none;
+}
+.page-title {
+    color: #333;
+    margin-bottom: 5px;
+}
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+    background: #2c6698;
+    border-color: #2c6698;
+    color: #fff;
+}
+.p-datatable .p-sortable-column.p-highlight .p-sortable-column-icon {
+    color: #0ed6f3;
+}
+.p-datatable .p-sortable-column.p-highlight{
+    color: #0ed6f3;
+}

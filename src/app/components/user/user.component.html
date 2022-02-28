@@ -1,0 +1,18 @@
+<div class="d-flex align-items-center" #user (click)="menu.toggle($event)">
+    <div class="user-container">
+        <div class="user-picture">
+            {{ initial }}
+        </div>
+        <div class="info-container d-none d-md-block">
+            <div class="user-name">
+                {{ name? name : 'user' }}
+            </div>
+            <div class="user-title">
+                {{ role }}
+            </div>
+        </div>
+    </div>
+    <i class="pi pi-chevron-down" style="color: #656565;"></i>
+</div>
+<p-menu #menu [model]="items"  [appendTo]="user" [popup]="true"></p-menu>
+
