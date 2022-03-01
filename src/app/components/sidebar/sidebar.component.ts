@@ -29,7 +29,7 @@ export class SidebarComponent implements OnInit {
         routerLink: ['/dashboard/home']
       },
       {
-        label: 'Appointments',
+        label: 'Appointments History',
         icon: 'pi pi-list',
         routerLink: ['/dashboard/upload-appointments'],
       },
