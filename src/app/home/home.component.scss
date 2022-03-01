@@ -1,0 +1,84 @@
+p {
+    margin-bottom: 1px !important   ;
+}
+.doc-card {
+    text-align: center;
+}
+.docImg-wrapper {
+    display: inline-block;
+    margin: 0 0 15px;
+    width: auto;
+    padding: 8px;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+}
+.doc-img {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+}
+.doc-name {
+    font-size: 17px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.wrapper-sidebar {
+    text-align: justify;
+    color: #757575;
+    line-height: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    margin-top: 10px;
+    border-top: 1px solid #f0f0f0;
+    position: relative;
+}
+.wrapper-sidebar {
+    p {
+        padding: 12px;
+        // border-top: 1px solid #f0f0f0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+}
+.app-style {
+    color:#0ed6f3 
+}
+.p-img {
+    border-radius: 4px;
+    height: 120px;
+    object-fit: cover;
+    width: 120px;
+}
+.p-text {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 500;
+}
+p {
+    color: #757575;
+}
+.p-button.p-button-danger.p-button-outlined {
+    background-color: rgba(242, 17, 54, 0.12) !important;
+    color: #e63c3c !important;
+    margin: 2px;
+    border: 0;
+}
+.p-button.p-button-success.p-button-outlined {
+    background-color: rgba(15, 183, 107, 0.12) !important;
+    color: #26af48 !important;
+    margin: 2px;
+    border: 0;
+}
+
+.p-button.p-button-secondary.p-button-outlined {
+    background-color: rgba(2, 182, 179, 0.12) !important;
+    color: #1db9aa !important;
+    margin: 2px;
+    border: 0;
+}
+.btn-warrper {
+    text-align: right;
+}

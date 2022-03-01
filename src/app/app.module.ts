@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AutoCompleteModule } from 'primeng/autocomplete';
+import { AvatarModule } from 'primeng/avatar';
+import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
 import { MenuModule } from 'primeng/menu';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { SidebarModule } from 'primeng/sidebar';
@@ -42,6 +45,9 @@ import {
     PanelMenuModule,
     AutoCompleteModule,
     TableModule,
+    CardModule,
+    AvatarModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

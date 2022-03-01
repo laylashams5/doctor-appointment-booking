@@ -1,1 +1,83 @@
-<!-- <p>Welcome ^_^</p> -->
+<div class="row">
+    <div class="col-md-5 col-lg-4 col-xl-3 ">
+        <p-card class="doc-card">
+            <p class="docImg-wrapper">
+
+                <img src="{{doctor.image}}" class="doc-img">
+            </p>
+
+            <p class="doc-name">{{doctor.name}}</p>
+            <p> {{doctor.speciality}}</p>
+            <div class="wrapper-sidebar">
+                <p>
+                    <i class="pi pi-qrcode"></i>
+                    Dashboard
+                </p>
+                <p (click)="showAppoientment()" class="app-style">
+                    <i class="pi pi-calendar"></i>
+                    Appointments
+                </p>
+                <p>
+                    <i class="pi pi-clock"></i>
+                    Schedule Timings
+                </p>
+                <p>
+                    <i class="pi pi-star"></i>
+                    Reviews
+                </p>
+                <p>
+                    <i class="pi pi-share-alt"></i>
+                    Social Media
+                </p>
+                <p>
+                    <i class="pi pi-users"></i>
+                    Patients
+                </p>
+            </div>
+        </p-card>
+    </div>
+    <div class="col-md-7 col-lg-8 col-xl-9" *ngIf="showAppointment==false">
+        <p style="text-align: center; margin-top: 20px;"> No Found Appointments!</p></div>
+    <div class="col-md-7 col-lg-8 col-xl-9" *ngIf="showAppointment">
+        <p-card *ngFor="let patient of waitingAppointments">
+            <div class="row">
+                <div class="col-7">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-12 col-sm-12">
+                            <img src="{{patient.patientImg}}" class="p-img" />
+                        </div>
+                        <div class="col-lg-9 col-md-12 col-sm-12">
+                            <p class="p-text">{{patient.patientName}}</p>
+                            <p class="p-date">
+                                <i class="pi pi-clock"></i>
+                                {{patient.appointmentDate}}
+                                <span class="p-time">{{patient.appointmentTime}}</span>
+                            </p>
+                            <p class="p-address">
+                                <i class="pi pi-map-marker"></i>
+                                {{patient.patientAddress}}
+                            </p>
+                            <p class="p-email">
+                                <i class="pi pi-envelope"></i>
+                                {{patient.patientEmail}}
+                            </p>
+                            <p class="p-phone">
+                                <i class="pi pi-phone"></i>
+                                {{patient.patientPhone}}
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-5">
+                    <button pButton pRipple type="button" label="View" class="p-button-outlined p-button-secondary"
+                        icon="pi pi-eye"></button>
+                    <button pButton pRipple type="button" label="Assign" class="p-button-outlined p-button-success"
+                        icon="pi pi-check"></button>
+                    <button pButton pRipple type="button" label="Cancel" class="p-button-outlined p-button-danger"
+                        icon="pi pi-times"></button>
+                </div>
+            </div>
+        </p-card>
+    </div>
+</div>

@@ -15,7 +15,7 @@ export class PatientComponent implements OnInit {
     {
       patientId:"#PT001",
       patientImg:"../../assets/imgs/patient1.jpg",
-      patientName:"#PT001",
+      patientName:"Charlene Reed",
       Age:29,
       gender:"female",
       address:"4417 Goosetown Drive, Taylorsville, North Carolina, 28681",
@@ -26,7 +26,7 @@ export class PatientComponent implements OnInit {
     {
       patientId:"#PT002",
       patientImg:"../../assets/imgs/patient1.jpg",
-      patientName:"#PT001",
+      patientName:"Charlene Reed",
       Age:29,
       gender:"female",
       address:"4417 Goosetown Drive, Taylorsville, North Carolina, 28681",
@@ -37,7 +37,7 @@ export class PatientComponent implements OnInit {
     {
       patientId:"#PT003",
       patientImg:"../../assets/imgs/patient1.jpg",
-      patientName:"#PT001",
+      patientName:"Charlene Reed",
       Age:29,
       gender:"female",
       address:"4417 Goosetown Drive, Taylorsville, North Carolina, 28681",
@@ -48,7 +48,7 @@ export class PatientComponent implements OnInit {
     {
       patientId:"#PT004",
       patientImg:"../../assets/imgs/patient1.jpg",
-      patientName:"#PT001",
+      patientName:"Charlene Reed",
       Age:29,
       gender:"female",
       address:"4417 Goosetown Drive, Taylorsville, North Carolina, 28681",
@@ -59,7 +59,7 @@ export class PatientComponent implements OnInit {
     {
       patientId:"#PT005",
       patientImg:"../../assets/imgs/patient1.jpg",
-      patientName:"#PT001",
+      patientName:"Charlene Reed",
       Age:29,
       gender:"female",
       address:"4417 Goosetown Drive, Taylorsville, North Carolina, 28681",

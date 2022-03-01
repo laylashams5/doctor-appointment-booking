@@ -13,7 +13,7 @@ import {
 } from './upload-appointments/upload-appointments.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '', pathMatch: 'full' },
+  { path: '', redirectTo: '/dashboard/home', pathMatch: 'full' },
   {
     path: 'dashboard', component: DashboradComponent, children: [
       {
